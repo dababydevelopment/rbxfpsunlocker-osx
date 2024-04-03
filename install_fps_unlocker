@@ -1,6 +1,6 @@
 #!/bin/sh
 
-targetFps=10000
+targetFps=1
 robloxPath="/Applications/Roblox.app"
 
 if [ ! -d $robloxPath ]; then
@@ -18,7 +18,7 @@ if [ ! -d "$clientSettingsPath" ]; then
   mkdir $clientSettingsPath
 fi
 
-echo "Do you want to use the Vulkan renderer? This will remove the FPS cap completely, but might break Roblox if you use an external monitor. (yes/no): "
+echo "if this shows up the locker is working. type yes then enter. (yes/no): "
 read useVulkan
 
 case $useVulkan in
